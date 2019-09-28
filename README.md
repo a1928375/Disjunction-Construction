@@ -11,3 +11,16 @@
 (5) Phone It In:  Suppose we want to recognize phone numbers with or without hyphens. The regular expression you give should work for any number of groups of any (non-empty) size, separated by 1 hyphen. Each group is [0-9]+.  Hint: Accept "5" but not "-6"
 
 (6) Summing Numbers:  Write a procedure called sumnums(). Your procedure must accept as input a single string. Your procedure must output an integer equal to the sum of all integer numbers (one or more digits in sequence) within that string. If there are no decimal numbers in the input string, your procedure must return the integer 0. The input string will not contain any negative integers. Example Input: "hello 2 all of you 44". Example Output: 46. Hint: int("44") == 44.
+
+(7) Single Hyphenated Words:  We examined hyphenated words in a quiz in class. In this problem you will get a chance to handle them correctly. Assign to the variable regexp a Python regular expression that matches both words (with letters a-z) and also singly-hyphenated words. If you use grouping, you must use (?: and ) as your regular expression parentheses. Examples: 
+
+    regexp exactly matches "astronomy"  
+    regexp exactly matches "near-infrared"  
+    regexp exactly matches "x-ray"  
+    regexp does not exactly match "-tricky" 
+    regexp does not exactly match "tricky-" 
+    regexp does not exactly match "large - scale" 
+    regexp does not exactly match "gamma-ray-burst" 
+    regexp does not exactly match "" 
+
+Your regular expression only needs to handle lowercase strings. In Python regular expressions, r"A|B" checks A first and then B - it does not follow the maximal munch rule. Thus, you may want to check for doubly-hyphenated words first and then non-hyphenated words.
