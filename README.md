@@ -48,3 +48,10 @@ Hint 2: Don't forget to escape special characters.
 Hint 3: You don't have to write very much code to complete this exercise: you just have to put together a few concepts. It is possible to complete this exercise without using a lexer at all. You may use any approach that works. 
 
 (9) Crafting Token Specifications:  Define a variable regexp that matches numbers with 1 or more leading digits and an optional . followed by 0 or more digits.
+
+(10) Learning:  Define a variable regexp that matches the left 3 strings but not the right 3.
+
+       Yes     No
+       aaa    aabbb
+       abb    aaccc
+       acc     bc
