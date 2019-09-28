@@ -6,4 +6,4 @@
 
 (3) Re Challenges:  Assign to the variable regexp a Python regular expression that matches single-argument mathematical functions. The function name is a lowercase word (a-z), the function argument must be a number (0-9), and there may optionally be spaces before and/or after the argument.  Hint: You may need to escape the ( and ).
 
-(4) Escaping The Escape:  Assign to regexp a regular expression for double-quoted string literals that allows for escaped double quotes. Hint: Escape " and \     Hint: (?: (?: ) )
+(4) Escaping The Escape:  Assign to regexp a regular expression for double-quoted string literals that allows for escaped double quotes. Hint: Escape " and \.     Hint: (?: (?: ) ).
